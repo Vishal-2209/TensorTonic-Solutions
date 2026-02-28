@@ -7,7 +7,5 @@ def matrix_trace(A):
     # Write code here
     x = 0
     for i in range(len(A)):
-        for j in range(len(A)):
-            if A[i][j] == A[j][i]:
-                x = x + A[i][j]
+        x = x + A[i][i]
     return x
